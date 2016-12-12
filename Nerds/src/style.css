@@ -297,19 +297,19 @@ header .welcome-text{
 }
 
 .slides .slide:nth-child(1){
-    background-image:url('../img/slide-1.png');
+    background-image:url('img/slide-1.png');
     background-repeat:no-repeat;
     background-position:540px 0px;
 }
 
 .slides .slide:nth-child(2){
-    background-image:url('../img/calc.png');
+    background-image:url('img/calc.png');
     background-repeat:no-repeat;
     background-position:540px 0px;
 }
 
 .slides .slide:nth-child(3){
-    background-image:url('../img/slide-3.png');
+    background-image:url('img/slide-3.png');
     background-repeat:no-repeat;
     background-position:540px 0px;
 }
@@ -510,7 +510,7 @@ header .welcome-text{
 .date:before, .date:after{
   display:inline-block;
   content:"";
-  background: url("../img/short-line.png");
+  background: url("img/short-line.png");
   width:65px;
   height:2px;
   vertical-align:middle;
@@ -1007,7 +1007,7 @@ button[value="func"]{
   position:absolute;
   display:inline-block;
   content:"";
-  background:url("../img/browser-active.png");
+  background:url("img/browser-active.png");
   z-index:2;
   width:240px;
   height:30px;
