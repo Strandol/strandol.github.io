@@ -997,7 +997,7 @@ button[value="func"]{
   position:absolute;
   display:inline-block;
   content:"";
-  background:url("../img/browser.png");
+  background:url("img/browser.png");
   z-index:2;
   width:240px;
   height:30px;
