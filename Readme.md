@@ -1,17 +1,11 @@
-# ������� https://strandol.github.io/#
-* �������: [���� ���������](https://htmlacademy.ru/profile/id35689).
+﻿Мои проекты: https://strandol.github.io/
+* Студент: [Илья Коваленко]
 
-### ������� � ����
+---
 
-##### �� ������ ����������� ������-���� �������� HTML � CSS�?
-��, �������.ss
+_Не удаляйте и не обращайте внимание на файлы:_<br>
+_`.editorconfig`, `.eslintignore`, `.eslintrc`, `.gitignore`, `.travis.yml`, `package.json`._
 
---
+---
 
-�� �������� � �� ��������� �������� �� �����: `.gosha`, `.editorconfig`, `.gitignore`, `.travis.yml`, `Gruntfile.js`, `package.json`.
-
---
-
-<a href="https://htmlacademy.ru/advanced_intensive"><img align="left" width="50" height="50" title="HTML Academy" src="https://htmlacademy.ru/static/img/logo-github.svg"></a>
-
-����������� ������ ��� �������� �� ����������� ������-����� �[����������� HTML � CSS](https://htmlacademy.ru/advanced_intensive)� �� [HTML Academy](https://htmlacademy.ru).
+<a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" title="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github.svg"></a>
