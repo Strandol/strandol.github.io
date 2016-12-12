@@ -1,0 +1,35 @@
+@import "main_menu";
+@import "header";
+@import "main_content";
+@import "hit";
+@import "features";
+@import "map";
+@import "contacts";
+@import "form";
+@import "discount";
+@import "travelers_info";
+@import "checkbox_style";
+@import "achivements";
+@import "photos";
+@import "footer";
+@import "features-table";
+$PT: "PT Sans";
+$screen_md: 700px;
+$screen_small: 320px;
+
+html{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $PT, Open Sans, Sans-serif;
+  min-width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

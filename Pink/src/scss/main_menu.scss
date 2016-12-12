@@ -1,0 +1,154 @@
+.main-menu{
+  width: 320px;
+  position: absolute;
+  display: none;
+  margin: 0 auto;
+  padding: 0;
+  top: 0px;
+  left: 0px;
+  list-style: none;
+
+  @media(min-width: 700px){
+    width: 100%;
+  }
+
+  @media(min-width: 1200px){
+    display: inline-block;
+    width: 550px;
+    left: 550px;
+    top: 45px;
+    border-top: none;
+  }
+
+  &__close_menu{
+    cursor: pointer;
+    position: absolute;
+    left: 275px;
+    top: 22px;
+    height: 22px;
+    width: 23px;
+    background: url("../img/close_menu.png");
+
+    @media(min-width: 700px){
+      position: static;
+      float: right;
+      margin-top: 30px;
+      margin-right: 40px;
+    }
+
+    @media(min-width: 1200px){
+      display: none;
+    }
+  }
+
+  &__close_menu:hover{
+    background: url("../img/close_menu--hvr.png");
+  }
+
+  &__close_menu:active{
+    opacity: .3;
+  }
+
+  &__user_block{
+    width: 320px;
+    display: inline-block;
+    background: #283645;
+    border-bottom: 1px solid #000101;
+    font-size: 0;
+
+    @media(min-width: 700px){
+      width: 100%;
+    }
+
+    @media(min-width: 1200px){
+      width: 610px;
+      border-bottom: none;
+      background: none;
+    }
+  }
+
+  &__logo_name{
+      display: inline-block;
+      width: 75px;
+      height: 28px;
+      background: url("../img/logo_mobile.png") no-repeat;
+      margin-left: 40px;
+      margin-top: 21px;
+      margin-bottom: 15px;
+
+      @media(min-width: 700px){
+        width: 145px;
+        height: 45px;
+        background: url("../img/logotype-white-tablet.svg") no-repeat;
+        margin-left: 40px;
+      }
+
+      @media(min-width: 1200px){
+        display: none;
+      }
+  }
+
+  li{
+    background: #283645;
+    border-bottom: 1px solid #000101;
+    border-top: 1px solid #485461;  
+
+    @media(min-width: 1200px){
+      display: inline-block;
+      border-bottom: none;
+      background: none;
+      border-top: none;
+    }
+  }
+
+  &__link{
+    width: 320px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
+    font-family: Open Sans;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+
+    @media(min-width: 700px){
+      width: 100%;
+      text-align: center;
+    }
+
+    @media(min-width: 1200px){
+      display: inline;
+      margin-right: 75px;
+      text-transform: none;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: normal;
+    }
+  }
+
+  &__link:hover{
+    color: #d22856;
+
+    @media(min-width: 1200px){
+      color: white;
+      border-bottom: 2px solid white;
+    }
+  }
+
+  &__link:active{
+    opacity: .3;
+
+    @media(min-width: 1200px){
+      border-bottom: none;
+    }
+  }
+}
+  
+.main-menu--open{
+  display: inline-block;
+}

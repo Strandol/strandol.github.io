@@ -1,0 +1,79 @@
+.traveler{
+  position: relative;
+}
+
+p[class="travelers__number"]{
+  width: 60px;
+  height: 60px;
+  font-family: Open Sans;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  background: #f2f2f2;
+  border: 2px solid #e5e5e5;
+  text-align: center;
+  padding-top: 13px;
+  margin-left: 20px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+
+  @media(min-width: 700px){
+    margin-left: 60px;
+  }
+}
+
+input[id="travelers__name"], input[id="travelers__nick"]{
+  width: 215px;
+  border: 2px solid #e5e5e5;
+  outline: none;
+  margin-left: -5px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  padding-left: 22px;
+  padding-right: 22px;
+  box-sizing: border-box;
+  margin-bottom: 17px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+}
+
+input[id="travelers__name"]{
+  @media(min-width: 1200px){
+    top: 35px;
+    position: absolute;
+  }
+}
+
+label[class="form-wrapper__question travelers_nickname"]{
+  display: inline-block;
+  margin-left: 105px;
+  margin-bottom: 7px;
+
+  @media(min-width: 700px){
+    display: block;
+    width: 80px;
+    margin-left: 164px;
+    margin-bottom: 12px;
+  }
+
+  @media(min-width: 1200px){
+    display: inline-block;
+    position: absolute;
+    margin-left: 0px;
+    top: 0px;
+    right: 345px;
+  }
+}
+
+input[id="travelers__nick"]{
+  margin-left: 80px;
+  margin-bottom: 38px;
+
+  @media(min-width: 700px){
+    width: 296px;
+    margin-left: 140px;
+  }
+}

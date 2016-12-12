@@ -1,0 +1,133 @@
+.contacts{
+  background: url("../img/rectangle.png") 0px 100px;
+  position:relative;
+  z-index:2;
+  
+  @media(min-width: 700px){
+    &__our-location{
+      display: inline-block;
+	  
+	  @media(min-width: 700px){
+		display: block;
+	  }
+	  
+      @media(min-width: 1200px){
+        p:nth-of-type(1){
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &__tel{
+      display: inline-block;
+      width: 210px;
+      text-align: center;
+      margin-right: 95px;
+      margin-left: 85px;
+      margin-bottom: 45px;
+
+      @media(min-width: 1200px){
+        vertical-align: middle;
+        height: 218px;
+        margin-left: 175px;
+        margin-bottom: 0px;
+        p:nth-of-type(1){
+          margin-bottom: 58px;
+        }
+      }
+      p{
+        display: inline-block;
+      }
+    }
+
+    &__write-us{
+      @media(min-width: 1200px){
+        position: absolute;
+        left: 780px;
+      }
+      display: inline-block;
+      width: 245px;
+      text-align: center;
+      margin-bottom: 45px;
+
+      @media(min-width: 1200px){
+        p:nth-of-type(1){
+          margin-bottom: 30px;
+        }
+      }
+      p{
+        display: inline-block;
+      }
+    }
+  }
+  
+  @media(min-width: 1200px){
+	  &__our-location{
+		display: inline-block;
+	  }
+  }
+
+  &__header{
+    font-family: Open Sans Light;
+    font-size: 24px;
+    color: #283645;
+    text-align: center;
+
+    @media(min-width: 700px){
+      font-size: 40px;
+    }
+
+    @media(min-width: 1200px){
+      font-size: 50px;
+      margin-top: 0px;
+      margin-bottom: 60px;
+    }
+  }
+  &__text{
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 18px;
+    color: #283645;
+    text-align: center;
+    margin: 0;
+    z-index:1000;
+  }
+  &__address,&__mail,&__number{
+    position:relative;
+    display: block;
+    font-family: Open Sans Light;
+    font-size: 24px;
+    color: #d22856;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    z-index:1000;
+  }
+
+  @media(min-width: 700px){
+    &__address{
+      margin-bottom: 0px;
+    }
+  }
+}
+.contacts:after{
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background: url("../img/rectangle.png") no-repeat;
+  height: 125px;
+  width: 320px;
+  bottom: -60px;
+  z-index:1;
+
+  @media(min-width: 700px){
+    width: 700px;
+    background: url("../img/rectangle-tablet.png") no-repeat;
+    bottom: -125px;
+  }
+
+  @media(min-width: 1200px){
+    width: 100%;
+    left: 0px;
+    background: url("../img/rectangle-desktop.png") no-repeat;
+  }
+}

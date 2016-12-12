@@ -1,0 +1,67 @@
+.achivements{
+    position: relative;
+
+    @media(min-width: 1200px){
+      p{
+        margin-left: 238px;
+      }
+    }
+
+    input{
+      display: none;
+    }
+
+    &__label{
+      position: relative;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 30px;
+      color: #283645;
+      margin-bottom: 40px;
+      @media(min-width: 700px){
+        display: block;
+      }
+    }
+
+    @media(min-width: 1200px){
+      label[for="jewelery"]{
+        margin-right: 25px;
+      }
+
+      label[for="tower"]{
+        margin-right: 17px;
+      }
+    }
+
+    &__question{
+      text-transform: uppercase;
+      line-height: 18px;
+      font-size: 14px;
+      color: #d22856;
+      text-align: center;
+
+      @media(min-width: 700px){
+        width: 430px;
+        margin-top: -10px;
+        margin-left: 90px;
+        background: white;
+      }
+    }
+
+    &__label:before{
+      content:"";
+      display: inline-block;
+      width: 39px;
+      height: 39px;
+      border-radius: 5px;
+      border: 2px solid #e5e5e5;
+      background: white;
+      margin-left: 20px;
+      margin-right: 21px;
+      vertical-align: middle;
+
+      @media(min-width: 700px){
+        margin-left: 60px;
+      }
+    }
+  }

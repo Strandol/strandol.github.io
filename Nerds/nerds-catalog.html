@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Main</title>
+  </head>
+  <body>
+    <header class="header-catalog">
+      <div class="container">
+        <img src="img/nerds-logo.png" width="140px" height="58px" alt="logo">
+        <ul>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a class="selected" href="nerds-catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="user-block">
+          <a href="#"><i class="icon-basket"></i>Корзина</a>
+        </div>
+        <h2 class="welcome-text">Добро пожаловать в магазин<br>
+                                      готовых макетов</h2>
+      </div>
+    </header>
+    <div class="container-block">
+      <div class="write-us-block">
+        <form method="post" action="">
+            <p>Ваше имя:</p>
+            <p>Ваш e-mail:</p>
+            <input id="name" type="text" placeholder="Представьтесь, пожалуйста">
+            <input id="e-mail" type="text" placeholder="Для отправки ответа">
+            <p>Текст письма:</p>
+            <textarea id="message" placeholder="В свободной форме"></textarea>
+            <button id="send" type="submit">Отправить</button>
+            <button class="write-us-cancel_button" id="cancel" type="button">Отмена</button>
+            <button type="button" class="write-us-cancel"><img src="img/cross.png" alt="Закрыть"></button>
+        </form>
+      </div>
+    </div>
+    <div class="container clearfix"> 
+      <div class="change-panel">
+        <h3>Стоимость:</h3>
+        <div class="measure-panel">
+          <div class="measure-line">
+            <div class="active-line" style="width:60%;margin-left:50px;"></div>
+            <div class="min-value"></div>
+            <div class="max-value"></div>
+          </div>
+        </div>
+        <div class="price-panel">
+          <p>от</p> 
+          <input type="text" name="price" id="min-value" value="0">
+          <p>до</p>
+          <input type="text" name="price" id="max-value" value="15000">
+        </div>
+        <h3>Сетка:</h3>
+        <div class="nets">
+          <input type="radio" name="net" id="adaptive" checked="checked">
+          <label for="adaptive">Адаптивная</label>
+          <br>
+          <input type="radio" name="net" id="fixed">
+          <label for="fixed">Фиксированная</label>
+          <br>
+          <input type="radio" name="net" id="rubber" disabled>
+          <label class=" for="rubber">Резиновая</label>
+        </div>
+        <h3>Особенности:</h3>
+        <div class="features">
+          <input type="checkbox" name="features" id="slider" checked="checked">
+          <label for="slider">Слайдер</label>
+          <br>
+          <input type="checkbox" name="features" id="block-feature">
+          <label for="block-feature">Блок преимуществ</label>
+          <br>
+          <input type="checkbox" name="features" id="news" checked="checked">
+          <label for="news">Новости</label>
+          <br>
+          <input type="checkbox" name="features" id="galery">
+          <label for="galery">Галерея</label>
+          <br>
+          <input type="checkbox" name="features" id="basket">
+          <label for="basket">Корзина</label>
+          <br>
+          <a href="#">Показать</a>
+        </div>
+      </div>
+      <div class="catalog-container">
+        <div class="sort-panel">
+          <p>Сортировать:</p>
+          <button type="button" name="sort-of">По цене</button>
+          <button type="button" name="sort-of">По типу</button>
+          <button class="active" type="button" name="sort-of" value="func">По функционалу</button>
+          <button type="button" class="selected-sort icon-down-dir" name="sort"></button>
+          <button type="button" name="sort" class="icon-up-dir"></button>
+        </div>
+        <div class="goods-container">
+          <section class="layout">
+            <img src="img/aviator.png">
+            <div class="display-price">
+              <h3>Sunset</h3>
+              <p>Интернет-магазин<br>
+              с личным кабинетом</p>
+              <button type="button">10 000 Р.</button>
+            </div>
+          </section>
+          <section class="layout">
+            <img src="img/shine.png">
+            <div class="display-price">
+              <h3>Shine</h3>
+              <p>Интернет-галерея<br>
+              со всеми функциями</p>
+              <button type="button">12 000 Р.</button>
+            </div>
+          </section>
+          <section class="layout">
+            <img src="img/forte.png">
+            <div class="display-price">
+              <h3>Forte</h3>
+              <p>Интернет-магазин<br>
+              товаров для архитектуры</p>
+              <button type="button">11 000 Р.</button>
+            </div>
+          </section>
+          <section class="layout">
+            <img src="img/thai.png">
+            <div class="display-price">
+              <h3>Thai</h3>
+              <p>Магазин заказов<br>
+              блюд на дом</p>
+              <button type="button">10 000 Р.</button>
+            </div>
+          </section>
+          <section class="layout">
+            <img src="img/avenue.png">
+            <div class="display-price">
+              <h3>Avenue</h3>
+              <p>Интернет-магазин<br>
+              продажи шаблонов</p>
+              <button type="button">10 000 Р.</button>
+            </div>
+          </section>
+          <section class="layout">
+            <img src="img/dovetail.png">
+            <div class="display-price">
+              <h3>Dovetail</h3>
+              <p>Интернет-магазин<br>
+              вещей и аксесуаров</p>
+              <button type="button">14 000 Р.</button>
+            </div>
+          </section>
+        </div>
+        <div class="page-control">
+          <button class="current-page" type="button" name="page">1</button>
+          <button type="button" name="page">2</button>
+          <button type="button" name="page">3</button>
+          <button class="next" type="button" name="page">Следующая</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="map" id="map-canvas"></div>
+
+    <footer class="container">
+       <div class="mail">
+        <h3>NNЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург,<br>
+        ул.Б. Конюшенная, д. 19/8</p>
+        <p class="contacts">тел. +7 (812) 275-75-75</p>
+        <a class="write-us" href="#">Напишите нам</a>
+      </div>
+      <div class="social">
+        <a class="vk" href="#"><img src="img/vk.png" alt="vk"></a>
+        <a class="fb" href="#"><img src="img/fb.png" alt="fb"></a>
+        <a class="inst" href="#"><img src="img/inst.png" alt="inst"></a>
+        <div class="coupon">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var link = document.querySelector(".mail .write-us");
+      var popup = document.querySelector(".write-us-block");
+      var close_cross = document.querySelector(".write-us-cancel");
+      var close_button = document.querySelector(".write-us-cancel_button");
+      link.addEventListener("click", function(event){
+        event.preventDefault();
+        popup.classList.add("write-us-show");
+      });
+
+      close_cross.addEventListener("click", function(event){
+        event.preventDefault();
+        popup.classList.remove("write-us-show");
+      })
+
+      close_button.addEventListener("click", function(event){
+        event.preventDefault();
+        popup.classList.remove("write-us-show");
+      })
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script> 
+      function initialize() {
+          var mapOptions = {
+          zoom: 17,
+          center: new google.maps.LatLng(48.5171295,35.058034)
+        }
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        var image = "img/point.png";
+        var myLatLng = new google.maps.LatLng(48.5171295,35.058034);
+        var beachMarker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          icon: image
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </body>
+</html>

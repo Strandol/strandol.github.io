@@ -1,0 +1,191 @@
+.footer{
+  font-size: 0px;
+
+  @media(min-width: 700px){
+    width: 620px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media(min-width: 1200px){
+    width: 938px;
+    margin-left: 128px;
+  }
+
+  &__logo-img{
+    display: inline-block;
+    margin-left: 86px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    margin-bottom: 32px;
+
+    @media(min-width: 700px){
+      vertical-align: middle;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 70px;
+    }
+    
+    &:hover h2{
+      color: #d22856;
+    }
+
+    &:active img{
+      opacity: .3;
+    }
+
+    &:active h2{
+      color: #d22856;
+    }
+
+    img{
+      margin-right: 10px;
+      @media(min-width: 1200px){
+        background: url("../img/logotype-blue-desktop.svg") no-repeat;
+      }
+    }
+
+    h2{
+      display: inline-block;
+      color: #283645;
+      font-size: 25px;
+      line-height: 37px;
+      margin: 0;
+      letter-spacing: 2px;
+
+      @media(min-width: 1200px){
+        margin-right: 180px;
+      }
+    }
+  }
+  
+  &__social{
+    display: block;
+    margin: 0 auto;
+    width: 195px;
+    margin-bottom: 37px;
+
+    @media(min-width: 700px){
+      vertical-align: middle;
+      display: inline-block;
+      margin: 0;
+      margin-right: 85px;
+    }
+
+    @media(min-width: 1200px){
+      margin-right: 200px;
+    }
+  }
+
+  &__social-link{
+    font-size: 0px;
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: 3px solid #e9ebec;
+    margin-right: 12px;
+
+    &:last-child{
+      margin-right: 0px;
+    }
+
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+
+    &:hover{
+      border: 3px solid #283645;
+    }
+
+    &:active{
+      border: 3px solid #e9ebec;
+    }
+
+    &:active img{
+      opacity: .3;
+    }
+
+    img[alt="twitter"]{
+      padding-top: 16px;
+      width: 20px;
+      height: 16px;
+    }
+
+    img[alt="facebook"]{
+      padding-top: 12px;
+      width: 10px;
+      height: 21px;
+    }
+
+    img[alt="play"]{
+      width: 16px;
+      height: 14px;
+      padding-top: 17px;
+    }
+  }
+
+  &__copyright{
+    text-align: center;
+    margin-bottom: 46px;
+
+    @media(min-width: 700px){
+      display: inline-block;
+    }
+
+    &-text{
+      display: inline-block;
+      font-family: Open Sans;
+      font-size: 14px;
+      line-height: 18px;
+      color: #283645;
+      vertical-align: middle;
+      margin-right: 15px;
+
+      @media(min-width: 1200px){
+        font-size: 18px;
+      }
+    }
+
+    a{
+      background: url("../img/htmlacademy.png") no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 35px;
+    }
+
+    a:hover{
+      background: url("../img/htmlacademy--hover.png") no-repeat;
+    }
+
+    a:active{
+      background: url("../img/htmlacademy--hover.png") no-repeat;
+      opacity: .3;
+    }
+  }
+}
+
+.footer-index{
+  display: none;
+}
+
+@media(min-width: 700px){
+  .footer-index{
+    width: 620px;
+    margin: 0 auto;
+    font-size: 0;
+    display: block;
+    padding-top: 35px;
+  }
+}
+
+@media(min-width: 1200px){
+  .footer-index{
+    margin-left: 120px;
+    width: 100%;
+  }
+}

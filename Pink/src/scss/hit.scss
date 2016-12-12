@@ -1,0 +1,51 @@
+.hit{
+  display: block;
+  padding-bottom: 23px;
+  background: #283645;
+  position:relative;
+  img{
+    position:absolute;
+    margin-left: 20px;
+  }
+  &__text{
+    display: inline-block;
+    margin-left:112px;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  &__price{
+    display: block;
+    font-family: Open Sans Light;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    margin: 0;
+  }
+}
+
+.hit:before{
+    position:absolute;
+    display: inline-block;
+    content: "";
+    height: 280px;
+    width: 2px;
+    left: 20px;
+    background-color: #e5e5e5;
+}
+
+.hit:after{
+    position:absolute;
+    display: inline-block;
+    content: "";
+    height: 280px;
+    width: 2px;
+    right: 20px;
+    top: 0px;
+    background-color: #e5e5e5;
+}

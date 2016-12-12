@@ -1,0 +1,35 @@
+.features{
+  &__article{
+    background: url("../img/yes.png") 250px 20px no-repeat;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    border-bottom: 2px solid #e5e5e5;
+    padding-left: 45px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+  }
+  &__article--disabled{
+    background: url("../img/no.png") 250px 15px no-repeat;
+  }
+  &__selection{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #f2f2f2;
+
+    @media(min-width: 700px){
+      display: none;
+    }
+
+    img{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px; 
+    }
+    img:nth-of-type(1){
+      margin-left: 125px;
+    }
+  }
+}

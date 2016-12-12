@@ -1,0 +1,20 @@
+  input[id="shark"]:checked ~ label[for="shark"]:after,
+  input[id="beach"]:checked ~ label[for="beach"]:after,
+  input[id="Chack"]:checked ~ label[for="Chack"]:after,
+  input[id="jewelery"]:checked ~ label[for="jewelery"]:after,
+  input[id="tower"]:checked ~ label[for="tower"]:after,
+  input[id="hotel"]:checked ~ label[for="hotel"]:after{
+    content:"";
+    display: inline-block;
+    height: 17px;
+    width: 23px;
+    background: url("../img/checked.png") no-repeat;
+    position: absolute;
+    left: 33px;
+    top: 13px;
+    border-radius: 50%;
+
+    @media(min-width: 700px){
+      left: 73px;
+    }
+  }

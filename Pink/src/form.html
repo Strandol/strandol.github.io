@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Form-mobile</title>
+</head>
+<body>
+  <header class="header-wrap-form">
+    <nav class="header-wrap__nav-inner">
+      <a class="header-wrap__logo" href="#"></a>
+      <div class="header-wrap__open-menu"></div>
+      <ul class="main-menu">
+        <div class="main-menu__user_block">
+          <a href="#" class="main-menu__logo_name">Pink</a>
+          <div class="main-menu__close_menu" src="img/close_menu.png" alt="close_menu">
+        </div>
+        <li><a href="#" class="main-menu__link">Информация</a></li>
+        <li><a href="#" class="main-menu__link">Блог</a></li>
+        <li><a href="#" class="main-menu__link">Отзывы</a></li>
+        <li><a href="#" class="main-menu__link">Конкурс</a></li>
+      </ul>
+    </nav>
+    <p class="header-wrap-form__text-form">Конкурс на самое
+    безбашеное
+    путешествие с Пинк
+  </header>
+  <div class="form-wrapper">
+    <p class="discount">Поделитесь своей историей и получите
+    шанс выиграть ценный приз - 1000
+    миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</p>
+    <form class="form-wrapper__form" action="post">
+      <div class="form-wrapper form-wrapper_form">
+        <label for="name">Имя:*</label>
+        <input id="name" name="name" type="text" placeholder="Введите ваше имя" required>
+        <label for="surname">Фамилия:*</label>
+        <input id="surname" name="surname" type="text" placeholder="Укажите фамилию" required>
+        <label for="patronymic">Отчество:</label>
+        <input id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" type="text">
+      </div>
+      <div class="form-wrapper__form--bg">
+        <p class="form-wrapper__question app_question">С каким приложением
+        путешествовали?*</p>
+        <input id="for-iOS" name="app_name" value="IOS" type="radio" checked>
+        <label class="form-wrapper__question" for="for-iOS">Pink для iOS</label>
+        <input id="for-android" name="app_name" value="Android" type="radio">
+        <label class="form-wrapper__question" for="for-android">Pink на Android</label>
+        <input id="for-win_phone" name="app_name" value="WinPhone" type="radio">
+        <label class="form-wrapper__question" for="for-win_phone">Windows Phone</label>
+      </div>
+      <div class="form-wrapper__form time-form">
+        <p class="form-wrapper__question time_question">Когда вы путешествовали?*</p>
+        <input id="date-of-departure" name="date-of-departure" type="text" placeholder="1 апреля 2015" required>
+        <label for="date-of-departure" class="form-wrapper__question">Дата выезда</label>
+        <div class="duration_button">
+          <button type="button" class="decrease">-</button>
+          <input type="text" id="duration" name="count" placeholder="10 дней">
+          <button type="button" class="increase">+</button>
+        </div>
+        <label class="form-wrapper__question" for="duration">Продолжительность</label>
+        <input id="return-date" type="text" placeholder="1 апреля 2015" disabled>
+        <label class="form-wrapper__question" for="return-date">Дата возвращения</label>
+      </div>
+      <div class="form-wrapper__form--bg form-travelers">
+        <label class="form-wrapper__question" for="amount">Количество попутчиков*</label>
+        <div class="form-travelers__amount_button">
+          <button type="button" class="decrease">-</button>
+          <input id="amount" type="text" placeholder="2 чел" required>
+          <button type="button" class="increase">+</button>
+        </div>
+        <div class="line"></div>
+        <div class="travelers">
+
+        </div>
+      </div>
+      <div class="achivements time-form">
+        <p class="achivements__question">Ваши безбашенные
+        достижения в путешествии</p>
+        <input id="shark" name="shark" type="checkbox" value="Shark" checked>
+        <label class="achivements__label" for="shark">Сделал селфи с акулой</label>
+        <input id="beach" name="beach" type="checkbox" value="Beach" checked>
+        <label class="achivements__label" for="beach">Обгорел на пляже</label>
+        <input id="Chack" name="chack" type="checkbox" value="Chack">
+        <label class="achivements__label" for="Chack">Видел Чака Норриса</label>
+        <input id="jewelery" name="jewelery" type="checkbox" value="jewelery">
+        <label class="achivements__label" for="jewelery">Накупил сувениров</label>
+        <input id="tower" name="tower" type="checkbox" value="tower" checked>
+        <label class="achivements__label" for="tower">Удержал башню</label>
+        <input id="hotel" name="hotel" type="checkbox" value="hotel">
+        <label class="achivements__label" for="hotel">Разгромил отель</label>
+      </div>
+      <div class="photos form-wrapper__form--bg">
+        <p class="photos__text">Ваши фотографии из из поездки*</p>
+        <div class="photos__download">
+          <p class="photos__text_file">Загрузить фото</p>
+          <input type="file" name="UploadImages" id="UploadImage" class="photos__download" style="opacity:0" multiple></input>
+        </div>
+        <div class="line"></div>
+        <div class="photos__download-image-list"></div>
+      </div>
+      <input class="form-wrapper__submit-button" type="submit"></input>
+      <p class="form-wrapper__form-note"><span>*</span> - Обязательные поля</p>
+    </form>
+    <div class="footer">
+      <a class="footer__logo-img" href="#"><img src="img/logo-pink.png" alt="Pink-logo"><h2>Pink</h2></a>
+      <div class="footer__social">
+        <a class="footer__social-link" href="#"><img src="img/twitter.png" alt="twitter"></a>
+        <a class="footer__social-link" href="#"><img src="img/fb.png" alt="facebook"></a>
+        <a class="footer__social-link" href="#"><img src="img/play.png" alt="play"></a>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Разработано</p>
+        <a href="#"></a>
+      </div>
+    </div>
+  </div>
+
+  <script id="travelers-template" type="text/html">
+    <div class="form-wrapper__number-of">№</div>
+    <label class="form-wrapper__question">Имя:*</label><br>
+    <p class="travelers__number"></p>
+    <input name="TravName" id="travelers__name" type="text" placeholder="Введите ваше имя" required>
+    <button class="travelers__remove">Удалить</button>
+    <label class="form-wrapper__question travelers_nickname">Прозвище</label>
+    <input name="TravNickname" id="travelers__nick" type="text" placeholder="Ну как же без этого!">
+  </script>
+  <script id="img-template" type="text/html">
+    <div class="photos__img-wrap">
+      <img src="{{image}}" alt="{{name}}" title="{{name}}">
+      <p class="file_name"></p>
+    </div>
+    <button class="photos__del-photo">
+      <i class="delete-icon">Х</i>
+    </button>
+  </script>
+   <script>
+    var button_open_list = document.querySelector(".header-wrap__open-menu");
+    var list = document.querySelector(".main-menu");
+    var button_close_list = document.querySelector(".main-menu__close_menu");
+    button_open_list.addEventListener("click", function(event){
+        event.preventDefault();
+        list.classList.add("main-menu--open");
+    });
+    button_close_list.addEventListener("click", function(event){
+        event.preventDefault();
+        list.classList.remove("main-menu--open");
+    })
+  </script>
+  <script src="../src/js/IncAndDec.js"></script>
+  <script src="../src/js/Form.js"></script>
+  <script src="../bower_components/mustache.js/mustache.min.js"></script>
+  <script src="../bower_components/moment/min/moment.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script>
+    function initialize() {
+        var mapOptions = {
+        zoom: 17,
+        center: new google.maps.LatLng(48.5171295,35.058034)
+      }
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      var image = "img/map_circle.png";
+      var myLatLng = new google.maps.LatLng(48.5171295,35.058034);
+      var beachMarker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: image
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</body>
+</html>

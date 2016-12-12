@@ -1,0 +1,313 @@
+.main-content{
+  background: url("../img/phone-smile.png") 80px 635px no-repeat,
+  url("../img/shape.png") 0px 140px no-repeat;
+
+  @media(min-width: 700px){
+    background: url("../img/iphone-screen-tablet-3@1x.png") 40px 195px no-repeat, 
+    url("../img/shape_tablet.png") 0px 190px no-repeat;
+  }
+
+  @media(min-width: 1200px){
+    background: url("../img/iphone-screen-desktop-1@1x.png") 145px 195px no-repeat,
+    url("../img/iphone-screen-desktop-2@1x.png") 460px 195px no-repeat, 
+    url("../img/iphone-screen-desktop-3@1x.png") 770px 195px no-repeat,  
+    url("../img/shape_desktop.png") 0px 225px no-repeat;
+  }
+
+  &__24hours{
+    display: none;   
+  }
+
+  .visible{
+    @media(min-width: 700px){
+      display: inline-block;
+    }
+  }
+
+  @media(min-width: 700px){
+    &__24hours{
+      width: 700px;
+      height: 360px;
+      display: inline-block;
+      background: url("../img/24hours.png") 40px 55px no-repeat,
+      white;
+      padding-top: 95px;
+
+      h2{
+        font-weight: bold;
+        width: 170px;
+        font-size: 30px;
+        line-height: 36px;
+        color: black;
+      }
+
+      p{
+        width: 265px;
+        color: #283645;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      a{
+        color: #d22856;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      h2,p,a{
+        margin-left: 350px;
+      }
+    }
+  }
+
+  @media(min-width: 1200px){
+    &__24hours{
+      min-width: 1200px;
+      margin-bottom: 70px;
+      background: url("../img/24hours.png") 160px 55px no-repeat,
+      url("../img/shape_desktop.png") 0px -120px no-repeat;
+
+      h2{
+        width: auto;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        margin-left: 495px;
+      }
+      p{
+        font-size: 18px;
+        line-height: 30px;
+        width: 530px;
+        margin-left: 495px;
+      }
+      a{
+        font-size: 18px;
+        line-height: 30px;
+        margin-left: 495px;
+      }
+    }
+  }
+
+  &__topic{
+    font-family: Open Sans Light;
+    font-size: 24px;
+    color: #283645;
+    text-align: center;
+
+    &:nth-of-type(2){
+      margin-bottom: 90px;
+    }
+
+    @media(min-width: 700px){
+      font-size: 40px;
+      margin: 0;
+      &:nth-of-type(2){
+         margin-bottom: 115px;
+      }
+    }
+
+    @media(min-width: 1200px){
+      &:nth-of-type(2){
+        margin-bottom: 410px;
+      }
+    }
+  }
+
+  &__article{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    @media(min-width: 700px){
+      width: 310px;
+      text-align: left;
+      margin-left: 350px;
+    }
+
+    @media(min-width: 1200px){
+      width: 270px;
+      display: inline-block;
+      margin-left: 0px;
+      text-align: center;
+
+      &:nth-of-type(1){      
+        margin-left: 155px;
+      }
+
+      &:not(:nth-of-type(1)){
+        margin-left: 45px;
+      }
+    }
+
+    h3{
+      font-family: Open Sans;
+      font-weight: bold;
+      color: black;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+
+      @media(min-width: 1200px){
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+    p{
+      font-family: Open Sans;
+      font-size: 14px;
+      line-height: 24px;
+      color: #283645;
+      margin-bottom: 25px;
+      
+      @media(min-width: 1200px){
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  &__article:nth-of-type(3){
+    p{
+      margin-bottom:295px;
+
+      @media(min-width: 700px){
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__comment{
+    background: white;
+    padding-top: 30px;
+
+    @media(min-width: 700px){
+      padding-top: 0px;
+      position: relative;
+      width: 620px;
+      margin: 0 auto;
+    }
+
+    @media(min-width: 1200px){
+      background: url("../img/Comment.png") 295px 0px no-repeat;
+      padding-top: 105px;
+    }
+
+    h3{
+      font-family: Open Sans;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+
+      @media(min-width: 700px){
+        position: absolute;
+        top: 120px;
+        left: 230px;
+      }
+
+      @media(min-width: 1200px){
+        top: 190px;
+        font-size: 24px;
+      }
+    }
+    p{
+      width: 280px;
+      margin: 0 auto;
+      font-family: Open Sans;
+      font-size: 14px;
+      line-height: 30px;
+      color: #283645;
+      text-align: center;
+      margin-bottom: 32px;
+
+      @media(min-width: 700px){
+        width: 620px;
+        display: inline-block;
+        font-size: 18px;
+        line-height: 30px;
+        color: #283645;
+        text-align: center;
+      }
+
+      @media(min-width: 1200px){
+        font-size: 18px;
+        line-height: 30px;
+        width: 700px;
+        color: #283645;
+      }
+    }
+
+    span{
+      display: none;
+
+      @media(min-width: 700px){
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 14px;
+        line-height: 30px;
+        color: #283645;
+        margin-bottom: 35px;
+      }
+      @media(min-width: 1200px){
+        width: 670px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #283645;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__selection{
+    padding-bottom: 133px;
+    background: url("../img/shape.png");
+    @media(min-width: 700px){
+      text-align: center;
+      background: none;
+      margin-bottom: 15px;
+      padding-bottom: 0px;
+    }
+
+    @media(min-width: 1200px){
+      display: none;
+    }
+
+    img{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+    img:nth-of-type(1){
+      margin-left: 125px;
+
+      @media(min-width: 700px){
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+.selection{
+  background: #f2f2f2;
+  text-align: center;
+
+  @media(min-width: 1200px){
+    display: none;
+  }
+  
+  img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 6px;
+    height: 6px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+
+  .main-content__select-point--selected{
+    width: 12px;
+    height: 12px;
+  }
+}
